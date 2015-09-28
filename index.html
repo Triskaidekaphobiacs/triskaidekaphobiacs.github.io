@@ -32,7 +32,7 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand" href="#"><i class="fa fa-cubes"></i>Triskaidekaphobiacs</a>
+                <a class="navbar-brand" href="#top"><i class="fa fa-cubes"></i>Triskaidekaphobiacs</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             	<div class="pull-right">
@@ -58,7 +58,7 @@
         </div>
     </nav>
 
-    <header class="header-image">
+    <header class="header-image" id="top">
         <div class="headline">
             <div class="container">
                 <h1><i class="fa fa-cubes"></i>Triskaidekaphobiacs</h1>
@@ -153,6 +153,17 @@
         </footer>
 
     </div>
+<script>
+  $("nav a[href^='#']").on('click', function(e){
+     e.preventDefault();
+     var hash = this.hash;
+     $('html, body').animate({
+     	  scrollTop:$(hash).offset().top
+     }, 250, function(){
+        window.location.hash = hash;
+     });
+  });
+</script>
 
 </body>
 
