@@ -113,7 +113,11 @@ h1 {
 }
 
 .team-member ul li a:hover,  .team-member ul li a:focus, .team-member ul li a:active {
-	background-color: #337ab7;
+  background-color: #337ab7;
+}
+
+.team-member p, .content p {
+  text-align: justify;
 }
 
 footer {
