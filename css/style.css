@@ -12,11 +12,14 @@ body {
     display: block;
     width: 100%;
     text-align: center;
-    background: url('../images/background2.jpg') no-repeat center center;
+    background: url('../images/timova_fotka.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    min-height: 1200px;
+    margin-top: 51px;
+    padding-top:120px;
 }
 
 h1 {
@@ -30,7 +33,10 @@ h1 {
 }
 
 .headline h1 {
-    font-size: 130px;
+    margin-top: 350px;
+    padding-top:  25px;
+    font-size: 105px;
+    /*word-wrap: break-word;*/
     /*
     background: #fff;
     background: rgba(255,255,255,0.9);
@@ -39,6 +45,10 @@ h1 {
 
 .headline h2 {
     font-size: 77px;
+}
+
+.headline i{
+    font-size: 130px;
 }
 
 .divider {
@@ -126,7 +136,8 @@ footer {
 
 @media(max-width:1200px) {
     .headline h1 {
-        font-size: 140px;
+        font-size: 90px;
+        margin-top: 300px;
     }
 
     .headline h2 {
@@ -148,11 +159,16 @@ footer {
     .featurette-heading {
         font-size: 35px;
     }
+
+    .header-image {
+        min-height: 1050px;
+    }
 }
 
 @media(max-width:991px) {
     .headline h1 {
-        font-size: 105px;
+        font-size: 70px;
+        margin-top: 250px;
     }
 
     .headline h2 {
@@ -178,6 +194,10 @@ footer {
     .featurette-heading {
         font-size: 30px;
     }
+
+    .header-image {
+        min-height: 950px;
+    }
 }
 
 @media(max-width:768px) {
@@ -192,11 +212,20 @@ footer {
     .featurette-heading {
         font-size: 25px;
     }
+
+    .headline h1{   
+        margin-top: 200px;
+    }
+
+    .header-image {
+        min-height: 750px;
+    }
 }
 
 @media(max-width:668px) {
     .headline h1 {
-        font-size: 70px;
+        font-size: 55px;
+        margin-top: 150px;
     }
 
     .headline h2 {
@@ -206,6 +235,10 @@ footer {
     .featurette-divider {
         margin: 30px 0;
     }
+
+    .header-image {
+        min-height: 650px;
+    }
 }
 
 @media(max-width:640px) {
@@ -214,7 +247,8 @@ footer {
     }
 
     .headline h1 {
-        font-size: 60px;
+        font-size: 50px;
+        margin-top: 100px;
     }
 
     .headline h2 {
@@ -239,5 +273,9 @@ footer {
     .featurette-image.pull-right {
         margin-bottom: 10px;
         margin-left: 0;
+    }
+
+    .headline h1{
+        margin-top: 75px;
     }
 }
