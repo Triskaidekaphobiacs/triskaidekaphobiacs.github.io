@@ -78,6 +78,7 @@
             <div class="content">
                 <p class="lead">Zoznam formálnych a neformálnych stretnutí a udalostí za posledné týždne.</p>
                 <ul class="news-scrollable">
+                    <li>19.2.2016 Privítanie nového člena tímu - Mira, konzultovanie existujúcich bugov, príprava na odovzdávanie prototypu študentom.</li>
                     <li>28.1.2016 Stretnutie v 3D Labe, návrh doplnenia metamodelu prototypu o potrebné triedy z UML superstructure.</li>
                     <li>8.12.2015 Ukončenie posledného - piateho šprintu. Do stretnutia sa nám podarilo do prototypu implementovať väčšinu funkcionality prototypu kombinovaných fragmentov. Večer sa nám podarilo fragmenty už aj vykreslovať, všetko v rámci novej architektúry a korektného využitia metamodelu.</li>
                     <li>1.12.2015 Ukončenie štvrtého šprintu, v prototype fungujú interakcie a lifelines nad metamodelom. Pracujeme s kombinovanými fragmentami, istá časť je už do nášho prototypu premigrovaná. Zahájili sme posledný, len týždňový šprint.</li>
@@ -305,106 +306,134 @@
   </div>
   <div class="content">
       <h2><i class="fa fa-files-o"></i> Zápisnice</h2>
-      <h3>Zimný semester</h3>
-      <div class="table-responsive">
-        <table class="table table-hover">
-           <thead>
-              <tr>
-                 <td>#</td>
-                 <td>Dátum stretnutia</td>
-                 <td>Názov</td>
-                 <td>Opis</td>
-                 <td>Pridal</td>
-             </tr>
-         </thead>
-         <tbody>
-          <tr>
-              <td>1</td>
-              <td>21.9.2015</td>
-              <td><a href="documents/meetings/TP_zapisnica_0.pdf">Úvodné stretnutie</a></td>
-              <td>Úvodné stretnutie tímu s vedúcim,  predstavenie projektu a určenie začiatočných úloh.</td>
-              <td>Adam</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>29.9.2015</td>
-            <td><a href="documents/meetings/TP_zapisnica_1.pdf">Prvé stretnutie</a></td>
-            <td>Prvé oficiálne stretnutie tímu s vedúcim, analýza možností práce na projekte.</td>
-            <td>Adam</td>
-        </tr>     
-        <tr>
-            <td>3</td>
-            <td>6.10.2015</td>
-            <td><a href="documents/meetings/TP_zapisnica_2.pdf">Druhé stretnutie</a></td>
-            <td>Prezentácia existujúceho riešenia 3D UML, určovanie cieľov pre túto technológiu.</td>
-            <td>Patrik</td>
-        </tr>
-	    <tr>
-            <td>4</td>
-            <td>13.10.2015</td>
-            <td><a href="documents/meetings/TP_zapisnica_3.pdf">Tretie stretnutie</a></td>
-            <td>Stretnutie s ďaľšími členmi 3D Uml projektu. Určovanie spôsobov splnenia jednotlivých cieľov.</td>
-            <td>Boris</td>
-        </tr>
-    	<tr>
-            <td>5</td>
-            <td>20.10.2015</td>
-            <td><a href="documents/meetings/TP_zapisnica_4.pdf">Štvrté stretnutie</a></td>
-            <td>Predstavenie architektúry pre Activity Diagram v 3D UML. Určenie cieľov v rámci predmetu TP</td>
-            <td>Tomáš</td>
-        </tr>    
-        <tr>
-            <td>6</td>
-            <td>28.10.2015</td>
-            <td><a href="documents/meetings/TP_zapisnica_5.pdf">Piate stretnutie</a></td>
-            <td>Štruktúra Activity Diagramu, Model MMCCV a komunikácia medzi jeho zložkami</td>
-            <td>Matej</td>
-        </tr>    
-	<tr>
-            <td>7</td>
-            <td>3.11.2015</td>
-            <td><a href="documents/meetings/TP_zapisnica_6.pdf">Šieste stretnutie</a></td>
-            <td>Vytvorenie projektového backlogu, stanovenie úloh na šprint</td>
-            <td>Matej</td>
-        </tr>  
-        <tr>
-            <td>8</td>
-            <td>10.11.2015</td>
-            <td><a href="documents/meetings/TP_zapisnica_7.pdf">Siedme stretnutie</a></td>
-            <td>Práca na treťom šprinte, vypracovanie základných user stories</td>
-            <td>Adam</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>19.11.2015</td>
-            <td><a href="documents/meetings/TP_zapisnica_8.pdf">Ôsme stretnutie</a></td>
-            <td>Ukončenie tretieho šprintu, zahájenie štvrtého šprintu</td>
-            <td>Adam</td>
-        </tr>      
-         <tr>
-            <td>10</td>
-            <td>25.11.2015</td>
-            <td><a href="documents/meetings/TP_zapisnica_9.pdf">Deviate stretnutie</a></td>
-            <td>Práca na štvrtom šprinte</td>
-            <td>Adam</td>
-        </tr>
-        <tr>
-            <td>11</td>
-            <td>1.12.2015</td>
-            <td><a href="documents/meetings/TP_zapisnica_10.pdf">Desiate stretnutie</a></td>
-            <td>Návrh vkladania fragmentov</td>
-            <td>Tomáš</td>
-        </tr>  
-        <tr>
-            <td>12</td>
-            <td>8.12.2015</td>
-            <td><a href="documents/meetings/TP_zapisnica_11.pdf">Jedenáste stretnutie</a></td>
-            <td>Vkladanie fragmentov</td>
-            <td>Adam</td>
-        </tr>      
-    </tbody>    
-</table>    
-</div>  
+      <div id="DOCS-ZS"> 
+          <h3>Zimný semester</h3>
+              <div class="table-responsive">
+                <table class="table table-hover">
+                   <thead>
+                      <tr>
+                         <td>#</td>
+                         <td>Dátum stretnutia</td>
+                         <td>Názov</td>
+                         <td>Opis</td>
+                         <td>Pridal</td>
+                     </tr>
+                 </thead>
+                 <tbody>
+                  <tr>
+                      <td>1</td>
+                      <td>21.9.2015</td>
+                      <td><a href="documents/meetings/TP_zapisnica_0.pdf">Úvodné stretnutie</a></td>
+                      <td>Úvodné stretnutie tímu s vedúcim,  predstavenie projektu a určenie začiatočných úloh.</td>
+                      <td>Adam</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>29.9.2015</td>
+                    <td><a href="documents/meetings/TP_zapisnica_1.pdf">Prvé stretnutie</a></td>
+                    <td>Prvé oficiálne stretnutie tímu s vedúcim, analýza možností práce na projekte.</td>
+                    <td>Adam</td>
+                </tr>     
+                <tr>
+                    <td>3</td>
+                    <td>6.10.2015</td>
+                    <td><a href="documents/meetings/TP_zapisnica_2.pdf">Druhé stretnutie</a></td>
+                    <td>Prezentácia existujúceho riešenia 3D UML, určovanie cieľov pre túto technológiu.</td>
+                    <td>Patrik</td>
+                </tr>
+        	    <tr>
+                    <td>4</td>
+                    <td>13.10.2015</td>
+                    <td><a href="documents/meetings/TP_zapisnica_3.pdf">Tretie stretnutie</a></td>
+                    <td>Stretnutie s ďaľšími členmi 3D Uml projektu. Určovanie spôsobov splnenia jednotlivých cieľov.</td>
+                    <td>Boris</td>
+                </tr>
+            	<tr>
+                    <td>5</td>
+                    <td>20.10.2015</td>
+                    <td><a href="documents/meetings/TP_zapisnica_4.pdf">Štvrté stretnutie</a></td>
+                    <td>Predstavenie architektúry pre Activity Diagram v 3D UML. Určenie cieľov v rámci predmetu TP</td>
+                    <td>Tomáš</td>
+                </tr>    
+                <tr>
+                    <td>6</td>
+                    <td>28.10.2015</td>
+                    <td><a href="documents/meetings/TP_zapisnica_5.pdf">Piate stretnutie</a></td>
+                    <td>Štruktúra Activity Diagramu, Model MMCCV a komunikácia medzi jeho zložkami</td>
+                    <td>Matej</td>
+                </tr>    
+        	     <tr>
+                    <td>7</td>
+                    <td>3.11.2015</td>
+                    <td><a href="documents/meetings/TP_zapisnica_6.pdf">Šieste stretnutie</a></td>
+                    <td>Vytvorenie projektového backlogu, stanovenie úloh na šprint</td>
+                    <td>Matej</td>
+                </tr>  
+                <tr>
+                    <td>8</td>
+                    <td>10.11.2015</td>
+                    <td><a href="documents/meetings/TP_zapisnica_7.pdf">Siedme stretnutie</a></td>
+                    <td>Práca na treťom šprinte, vypracovanie základných user stories</td>
+                    <td>Adam</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>19.11.2015</td>
+                    <td><a href="documents/meetings/TP_zapisnica_8.pdf">Ôsme stretnutie</a></td>
+                    <td>Ukončenie tretieho šprintu, zahájenie štvrtého šprintu</td>
+                    <td>Adam</td>
+                </tr>      
+                 <tr>
+                    <td>10</td>
+                    <td>25.11.2015</td>
+                    <td><a href="documents/meetings/TP_zapisnica_9.pdf">Deviate stretnutie</a></td>
+                    <td>Práca na štvrtom šprinte</td>
+                    <td>Adam</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>1.12.2015</td>
+                    <td><a href="documents/meetings/TP_zapisnica_10.pdf">Desiate stretnutie</a></td>
+                    <td>Návrh vkladania fragmentov</td>
+                    <td>Tomáš</td>
+                </tr>  
+                <tr>
+                    <td>12</td>
+                    <td>8.12.2015</td>
+                    <td><a href="documents/meetings/TP_zapisnica_11.pdf">Jedenáste stretnutie</a></td>
+                    <td>Vkladanie fragmentov</td>
+                    <td>Adam</td>
+                </tr>      
+            </tbody>    
+        </table>    
+        </div>
+       </div>    
+       <div id="DOCS-LS"> 
+          <h3>Letný semester</h3>
+              <div class="table-responsive">
+                <table class="table table-hover">
+                   <thead>
+                      <tr>
+                         <td>#</td>
+                         <td>Dátum stretnutia</td>
+                         <td>Názov</td>
+                         <td>Opis</td>
+                         <td>Pridal</td>
+                     </tr>
+                 </thead>
+                 <tbody>
+                  <tr>
+                      <td>1</td>
+                      <td>19.2.2016</td>
+                      <td>Úvodné stretnutie</a></td>
+                      <td>Privítanie nového člena tímu - Mira</td>
+                      <td>Adam</td>
+                  </tr>
+            </tbody>    
+        </table>    
+        </div>
+       </div>  
+</div>    
 <div>
     <h2><i class="fa fa-file"></i> Kontrolné body</h2>
     <div>
@@ -412,15 +441,15 @@
         <div>
             <h4>Kontrolný bod 1 - 18.11.2015</h4>
             <ul>
-              <li> <a href="documents/kontrolny_bod_inzinierske_dielo.pdf">Inžinierske dielo(verzia 1)</a></li>
-              <li><a href="documents/kontrolny_bod_riadenie.pdf">Riadenie v tíme(verzia 1)</a></li>
+              <li> <a href="documents/kontrolny_bod_inzinierske_dielo.pdf">Inžinierske dielo (verzia 1)</a></li>
+              <li><a href="documents/kontrolny_bod_riadenie.pdf">Riadenie v tíme (verzia 1)</a></li>
             </ul>
         </div>  
         <div>
             <h4>Kontrolný bod 2 - 14.12.2015</h4>
             <ul>
-              <li> <a href="documents/kontrolny_bod_2_inzinierske_dielo.pdf">Inžinierske dielo(verzia 2)</a></li>
-              <li><a href="documents/kontrolny_bod_2_riadenie.pdf">Riadenie v tíme(verzia 2)</a></li>
+              <li> <a href="documents/kontrolny_bod_2_inzinierske_dielo.pdf">Inžinierske dielo (verzia 2)</a></li>
+              <li><a href="documents/kontrolny_bod_2_riadenie.pdf">Riadenie v tíme (verzia 2)</a></li>
             </ul>
         </div> 
     </div>
