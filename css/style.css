@@ -104,7 +104,7 @@ h1 {
 .team-member img {
   margin: 0 auto;
   max-height: 250px;
-  border: 2px solid #000;
+  border: 1px solid #000;
 }
 
 .team-member ul li a {
@@ -128,6 +128,10 @@ h1 {
 
 .team-member p, .content p {
   text-align: justify;
+}
+
+.team-skills {
+    margin-bottom: 1em;
 }
 
 footer {
